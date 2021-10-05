@@ -4,10 +4,10 @@
 
 A bird hunter is trying to hunt the birds with his gun... ,
 but at the same time its raining .. if the rain drops touches the gun
-then then the gun will spoile the hunter no longer will hunt the birds.... so the GAME if over.....
+then then the gun will spoile the hunter no longer will hunt the birds.... so the GAME is over.....
 
-so we miss our gun from the rain drops and have to shoot the bird ,
-for every bird the score will increase by 10 points.
+so we have to maintain a distance of  our gun from the rain drops and have to shoot the bird ,
+for every hunting bird the score will increase by 10 points.
 
 
 ## GOAL :
