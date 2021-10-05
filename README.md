@@ -21,3 +21,7 @@ https://github.com/Vidyasagar5566/Crazy..Bird-Hunter-in-Rain/blob/main/game%20sc
 
 
 https://github.com/Vidyasagar5566/Crazy..Bird-Hunter-in-Rain/blob/main/game%20screen%20shot/Screenshot%20(514).png
+
+
+
+https://github.com/Vidyasagar5566/Crazy..Bird-Hunter-in-Rain/blob/main/game%20screen%20shot/Screenshot%20(515).png
