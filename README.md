@@ -28,21 +28,38 @@ the background of the game with sky and clouds ,
 
 
 
+the gun man satands on screen with the gun to shoot the birds ,
+
 ![Title screen](https://github.com/Vidyasagar5566/Crazy..Bird-Hunter-in-Rain/blob/main/game%20screen%20shot/Screenshot%20(508).png)
 
+
+
+if we press the space bar then the bullets will fires ,
 
 ![Title screen](https://github.com/Vidyasagar5566/Crazy..Bird-Hunter-in-Rain/blob/main/game%20screen%20shot/Screenshot%20(509).png)
 
 
+
+the rain will start and the drops is falling from the sky ,
+
 ![Title screen](https://github.com/Vidyasagar5566/Crazy..Bird-Hunter-in-Rain/blob/main/game%20screen%20shot/Screenshot%20(510).png)
 
+
+
+in the raining of the sky the bird will fly from right to left ,
 
 ![Title screen](https://github.com/Vidyasagar5566/Crazy..Bird-Hunter-in-Rain/blob/main/game%20screen%20shot/Screenshot%20(511).png)
 
 
 
+now the hunter wants to shoot the bird with his gun by escaping with his gun from the rain drops ,
+
 ![Title screen](https://github.com/Vidyasagar5566/Crazy..Bird-Hunter-in-Rain/blob/main/game%20screen%20shot/Screenshot%20(514).png)
 
+
+
+if the rain drop touches the gun then the gun will spoil.... GAME OVER ......
+the score will be displayed ,
 
 
 ![Title screen](https://github.com/Vidyasagar5566/Crazy..Bird-Hunter-in-Rain/blob/main/game%20screen%20shot/Screenshot%20(515).png)
