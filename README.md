@@ -2,7 +2,7 @@
 
 ## GAME motive :
 
-A bird hunter is trying to hunt the birds with his gun... ,
+A bird hunter is trying to hunt the birds with his gun (the burd hunter has boosters on his leg so he can fly on the sky)... ,
 but at the same time its raining .. if the rain drops touches the gun
 then then the gun will spoile the hunter no longer will hunt the birds.... so the GAME is over.....
 
@@ -17,8 +17,8 @@ hunting the burds with gun shot in the hands of gun man
 
 use left arrow to move left side ,
 use right arrow to move right side ,
-use up arrow to move up side ,
-use down arrow to move down side ,
+use up arrow to move up side (to fly in the sky),
+use down arrow to move down side(to come down from the sky to land),
 use space bar to fire a bullet
 
 ## screen shots of the GAME 
