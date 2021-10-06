@@ -143,8 +143,8 @@ while running:
                 continue
             rock(column_enemy_list[i][j][0], column_enemy_list[i][j][1])
             column_enemy_list[i][j][1] += 0.5
-            if column_enemy_list[i][j][1] <= my <= column_enemy_list[i][j][1]+50:
-                if column_enemy_list[i][j][0]-5 <= mx <= column_enemy_list[i][j][0]+50:
+            if column_enemy_list[i][j][1] <= my <= column_enemy_list[i][j][1]+55:
+                if column_enemy_list[i][j][0]-5 <= mx <= column_enemy_list[i][j][0]+40:
                     stop = 1
         if column_enemy_list[i][0][1] >= 500:
             column_enemy_list.pop(i)
