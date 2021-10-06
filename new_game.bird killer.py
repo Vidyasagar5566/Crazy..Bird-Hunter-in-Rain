@@ -11,7 +11,7 @@ back_ground = pygame.image.load("summer-landscape-countryside-with-river-forest-
 
 # text
 font = pygame.font.Font("freesansbold.ttf", 32)
-tx, ty = 50, 50
+tx, ty = 0, 0
 def text(x, y):
     ll = font.render("score :" + str(score), True, (0, 0, 5))
     screen.blit(ll, (x, y))
@@ -42,6 +42,7 @@ def rock(x, y):
 # birds
 birdy = random.randint(0, 30)
 birdx = 800
+bird_blast = 1000
 bird_ = pygame.image.load("bird.png")
 def bird(x, y):
     screen.blit(bird_, (x, y*10))
@@ -94,6 +95,7 @@ while running:
         mx = 0
     if mx >= 740:
         mx = 740
+
     # gun man display up down
     my += count_UPD
     if my >= 500:
@@ -111,15 +113,16 @@ while running:
     i, a = 0, len(b_list)
     while i < a:
         bullet(b_list[i][0], b_list[i][1])
-        b_list[i][1] -= 1
+        b_list[i][1] -= 1.2
 
         # collision
-
         if birdy*10 <= b_list[i][1] <= birdy*10 + 64:
             if birdx <= b_list[i][0] <= birdx + 64:
-                bird_count = 0
+                bird_blast_x, bird_blast_y = b_list[i][0], b_list[i][1]
+                bird_count, bird_blast = 0, 0
                 birdx = 800
                 score += 10
+
 
         if b_list[i][1] <= 0:
             b_list.pop(i)
@@ -140,6 +143,7 @@ while running:
     while i < a:
         for j in range(6):
             if stop == 1:
+                rock(column_enemy_list[i][j-1][0], column_enemy_list[i][j-1][1])
                 continue
             rock(column_enemy_list[i][j][0], column_enemy_list[i][j][1])
             column_enemy_list[i][j][1] += 0.5
@@ -164,8 +168,13 @@ while running:
 
     # score display
     if stop == 1:
-        text(350, 280)
+        text(350, 80)
     else:
         text(tx, ty)
+
+    # blast at bird collission
+    if bird_blast <= 100:
+        screen.blit(blast, (bird_blast_x, bird_blast_y))
+    bird_blast+=1
 
     pygame.display.update()
