@@ -33,9 +33,9 @@ by = 500
 def bullet(x, y):
     screen.blit(bullet_, (x, y))
 
-# rockes
+# drops
 rock_ = pygame.image.load("water-drop.png")
-def rock(x, y):
+def drops(x, y):
     screen.blit(rock_, (x, y))
 
 
@@ -115,7 +115,7 @@ while running:
         bullet(b_list[i][0], b_list[i][1])
         b_list[i][1] -= 1.2
 
-        # collision
+        # collision of bullet with bird
         if birdy*10 <= b_list[i][1] <= birdy*10 + 64:
             if birdx <= b_list[i][0] <= birdx + 64:
                 bird_blast_x, bird_blast_y = b_list[i][0], b_list[i][1]
@@ -130,7 +130,7 @@ while running:
         i += 1
 
 
-    # enemy display
+    # water drops display
     if column_enemy_list[-1][0][1] >= 150:
         row_enemy_list = []
         for i in range(6):
@@ -143,10 +143,12 @@ while running:
     while i < a:
         for j in range(6):
             if stop == 1:
-                rock(column_enemy_list[i][j-1][0], column_enemy_list[i][j-1][1])
+                drops(column_enemy_list[i][j-1][0], column_enemy_list[i][j-1][1])
                 continue
-            rock(column_enemy_list[i][j][0], column_enemy_list[i][j][1])
+            drops(column_enemy_list[i][j][0], column_enemy_list[i][j][1])
             column_enemy_list[i][j][1] += 0.5
+
+            # collision of gun with water drops
             if column_enemy_list[i][j][1] <= my <= column_enemy_list[i][j][1]+55:
                 if column_enemy_list[i][j][0]-5 <= mx <= column_enemy_list[i][j][0]+40:
                     stop = 1
