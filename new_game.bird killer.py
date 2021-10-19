@@ -7,7 +7,7 @@ pygame.display.set_caption("new_game")
 score = 0
 
 # back ground
-back_ground = pygame.image.load("summer-landscape-countryside-with-river-forest-clouds .jpg")
+back_ground = pygame.image.load("summer-landscape-countryside-with-river-forest-clouds.jpg")
 
 # text
 font = pygame.font.Font("freesansbold.ttf", 32)
