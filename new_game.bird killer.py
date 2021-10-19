@@ -146,7 +146,7 @@ while running:
                 drops(column_enemy_list[i][j-1][0], column_enemy_list[i][j-1][1])
                 continue
             drops(column_enemy_list[i][j][0], column_enemy_list[i][j][1])
-            column_enemy_list[i][j][1] += 0.5
+            column_enemy_list[i][j][1] += 0.6
 
             # collision of gun with water drops
             if column_enemy_list[i][j][1] <= my <= column_enemy_list[i][j][1]+55:
