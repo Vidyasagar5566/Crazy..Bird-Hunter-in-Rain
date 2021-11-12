@@ -113,7 +113,7 @@ while running:
     i, a = 0, len(b_list)
     while i < a:
         bullet(b_list[i][0], b_list[i][1])
-        b_list[i][1] -= 1.2
+        b_list[i][1] -= 1
 
         # collision of bullet with bird
         if birdy*10 <= b_list[i][1] <= birdy*10 + 64:
@@ -146,7 +146,7 @@ while running:
                 drops(column_enemy_list[i][j-1][0], column_enemy_list[i][j-1][1])
                 continue
             drops(column_enemy_list[i][j][0], column_enemy_list[i][j][1])
-            column_enemy_list[i][j][1] += 0.6
+            column_enemy_list[i][j][1] += 0.5
 
             # collision of gun with water drops
             if column_enemy_list[i][j][1] <= my <= column_enemy_list[i][j][1]+55:
